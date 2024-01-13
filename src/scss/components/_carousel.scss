@@ -1,0 +1,52 @@
+.carousel {
+    overflow: hidden;
+    width: 100%;
+    height: 270px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 300%; /* Змінено ширину контейнера для нескінченної прокрутки */
+}
+
+.carousel-item {
+    width: 33.33%; /* Змінено ширину слайдів */
+    box-sizing: border-box;
+    padding: 0 5px; /* Додано відступи для вирівнювання */
+}
+
+.carousel-img {
+    width: 100%; /* Змінено ширину зображення */
+    height: auto;
+}
+
+.carousel-prev,
+.carousel-next {
+    position: absolute;
+    top: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    background: #FFF8EF;
+    border: 3px solid #DD697B;
+    border-radius: 50%;
+    color:#DD697B;
+    transform: translateY(-50%);
+}
+
+.carousel-prev:disabled,
+.carousel-next:disabled {
+    color: lightgrey;
+    border: 3px solid lightgrey;
+    cursor: not-allowed;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
